@@ -1,0 +1,19 @@
+extends templates/pageTemplate
+
+block tmpVars
+    - var bodyClass = 'home-page';
+
+block title
+    title Site title
+
+block script
+    script(type='text/javascript').
+        var vars = {
+            ajaxUrl: "",
+            page: 'home_page'
+        };
+
+block content
+    main.site-main
+        include ../images/check_active.svg
+        p site-main
